@@ -108,6 +108,15 @@ Confidence değerlerinin bazı sahnelerde düşük çıkmasının sebebi:
 
 • Nesnenin kadraj içindeki konumu
 
+### Örnek 1
+<img width="895" height="936" alt="image" src="https://github.com/user-attachments/assets/388cf3b7-7e1e-460c-a905-9418313efb6c" />
+
+### Örnek 2
+<img width="901" height="933" alt="image" src="https://github.com/user-attachments/assets/587112ae-2a51-4915-880e-d09217358269" />
+
+### Örnek 3
+<img width="898" height="935" alt="image" src="https://github.com/user-attachments/assets/30ea8c28-f0ff-4ff5-af29-f56e7e121bf3" />
+
 Bu durum gerçek dünya uygulamaları için normal ve kabul edilebilir
 bir sonuçtur.
 
