@@ -59,5 +59,49 @@ model.train(
     imgsz=640,
     batch=8
 )
-
 ```
+Eğitim tamamlandıktan sonra elde edilen best.pt dosyası,
+tahmin işlemleri için saklanmıştır.
+
+## 4️⃣ PyQt5 Tabanlı Masaüstü Uygulaması
+
+Eğitilen model, Python ve PyQt5 kullanılarak geliştirilen
+bir masaüstü arayüzüne entegre edilmiştir.
+
+Bu arayüz sayesinde kullanıcı:
+
+• Bilgisayardan bir görüntü seçebilir
+• YOLOv8 modeli ile tespit işlemini başlatabilir
+• Nesnelerin bounding box’larını ve güven skorlarını görebilir
+
+Uygulama Özellikleri
+
+• Görsel yükleme
+• Nesne tespiti
+• Bounding box çizimi
+• Sınıf adı ve confidence değerinin gösterimi
+
+```text
+pip install ultralytics opencv-python pyqt5
+python gui.py
+```
+
+## 5️⃣ Test Sonuçları ve Değerlendirme
+
+Model; yalnız elma, yalnız adaptör ve her iki nesnenin birlikte bulunduğu
+görüntüler üzerinde test edilmiştir.
+
+Confidence değerlerinin bazı sahnelerde düşük çıkmasının sebebi:
+
+• Arka plan karmaşıklığı
+• Işık farklılıkları
+• Nesnenin kadraj içindeki konumu
+
+Bu durum gerçek dünya uygulamaları için normal ve kabul edilebilir
+bir sonuçtur.
+
+## 👤 Proje Sahibi
+
+ABDUL RAHMAN KHANOUM-2212721317
+BLG407 – Makine Öğrenmesi
+YOLOv8 Elma & Adaptör Nesne Tespiti
