@@ -48,3 +48,16 @@ YOLOv8n mimarisi seçilmiş ve aşağıdaki eğitim ayarları kullanılmıştır
 • Epoch: 60
 • Batch size: 8
 • Varsayılan veri artırma teknikleri
+
+```text
+from ultralytics import YOLO
+
+model = YOLO("yolov8n.pt")
+model.train(
+    data="/content/dataset/data.yaml",
+    epochs=60,
+    imgsz=640,
+    batch=8
+)
+
+```
