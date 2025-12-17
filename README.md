@@ -39,7 +39,7 @@ class_id  x_center  y_center  width  height
 ```
 
 
-3️⃣ Model Eğitimi
+## 3️⃣ Model Eğitimi
 
 Model eğitimi Google Colab ortamında gerçekleştirilmiştir.
 YOLOv8n mimarisi seçilmiş ve aşağıdaki eğitim ayarları kullanılmıştır:
