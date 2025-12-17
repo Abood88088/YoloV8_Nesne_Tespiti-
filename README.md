@@ -2,6 +2,7 @@
 
 Bu çalışma, BLG407 Makine Öğrenmesi dersi kapsamında gerçekleştirilmiş bir
 nesne tespiti uygulamasıdır.
+
 Projede amaç, YOLOv8 mimarisi kullanılarak **elma** ve **şarj adaptörü**
 nesnelerinin görüntüler üzerinde otomatik olarak tanınmasıdır.
 
@@ -38,20 +39,22 @@ Bu projede YOLO’nun standart etiketleme yapısı kullanılmıştır:
 class_id  x_center  y_center  width  height
 ```
 
-
 ## 3️⃣ Model Eğitimi
 
 Model eğitimi Google Colab ortamında gerçekleştirilmiştir.
+
 YOLOv8n mimarisi seçilmiş ve aşağıdaki eğitim ayarları kullanılmıştır:
 
 • Görüntü boyutu: 640 × 640
+
 • Epoch: 60
+
 • Batch size: 8
+
 • Varsayılan veri artırma teknikleri
 
 ```text
 from ultralytics import YOLO
-
 model = YOLO("yolov8n.pt")
 model.train(
     data="/content/dataset/data.yaml",
@@ -60,6 +63,7 @@ model.train(
     batch=8
 )
 ```
+
 Eğitim tamamlandıktan sonra elde edilen best.pt dosyası,
 tahmin işlemleri için saklanmıştır.
 
@@ -71,14 +75,19 @@ bir masaüstü arayüzüne entegre edilmiştir.
 Bu arayüz sayesinde kullanıcı:
 
 • Bilgisayardan bir görüntü seçebilir
+
 • YOLOv8 modeli ile tespit işlemini başlatabilir
+
 • Nesnelerin bounding box’larını ve güven skorlarını görebilir
 
 Uygulama Özellikleri
 
 • Görsel yükleme
+
 • Nesne tespiti
+
 • Bounding box çizimi
+
 • Sınıf adı ve confidence değerinin gösterimi
 
 ```text
@@ -96,6 +105,7 @@ Confidence değerlerinin bazı sahnelerde düşük çıkmasının sebebi:
 • Arka plan karmaşıklığı
 
 • Işık farklılıkları
+
 • Nesnenin kadraj içindeki konumu
 
 Bu durum gerçek dünya uygulamaları için normal ve kabul edilebilir
@@ -104,5 +114,7 @@ bir sonuçtur.
 ## 👤 Proje Sahibi
 
 ABDUL RAHMAN KHANOUM-2212721317
+
 BLG407 – Makine Öğrenmesi
+
 YOLOv8 Elma & Adaptör Nesne Tespiti
