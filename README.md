@@ -36,6 +36,8 @@ Bu projede YOLO’nun standart etiketleme yapısı kullanılmıştır:
 
 ```text
 class_id  x_center  y_center  width  height
+```
+
 
 3️⃣ Model Eğitimi
 
