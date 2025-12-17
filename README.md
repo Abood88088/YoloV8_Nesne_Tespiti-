@@ -94,6 +94,7 @@ görüntüler üzerinde test edilmiştir.
 Confidence değerlerinin bazı sahnelerde düşük çıkmasının sebebi:
 
 • Arka plan karmaşıklığı
+
 • Işık farklılıkları
 • Nesnenin kadraj içindeki konumu
 
